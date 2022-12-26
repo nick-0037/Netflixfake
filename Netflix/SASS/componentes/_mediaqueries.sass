@@ -1,0 +1,42 @@
+@mixin mq($medida: 480px)
+    @media only screen and (min-width: $medida)
+        @content
+
+@include mq(768px)
+    .vh .contenido h1
+        font-size: 3.2rem
+        line-height: 50px
+        
+@include mq(768px)
+    .vh .contenido h2 
+        font-size: 1.625rem
+
+@include mq(768px)
+    .vh .contenido h3 
+        font-size: 1.2rem
+
+@include mq(768px)
+    .vh .contenido .fila-responsive
+        display: flex
+        flex-direction: row
+        align-items: center
+        gap: 0
+
+@include mq(768px)
+    .vh .contenido .fila-responsive input
+        height: 35px
+
+@include mq(768px)
+    .vh .contenido .fila-responsive button
+        width: 200px
+        height: 61px
+        border-radius: 0 2px 2px 0
+        font-size: 1.7rem
+
+@include mq(768px)
+    .vh .contenido .fila-responsive #signo-bt
+        width: 8px
+        
+
+
+
